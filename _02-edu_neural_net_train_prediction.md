@@ -1,4 +1,4 @@
-<pre>
+<Pre>
 """
 Title : Numpy Array
 Program : code name : numpy-array.py 
