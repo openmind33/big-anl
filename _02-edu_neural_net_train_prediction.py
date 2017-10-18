@@ -1,3 +1,4 @@
+<pre>
 """
 Title : Numpy Array
 Program : code name : numpy-array.py 
@@ -40,3 +41,4 @@ print(np.mean(arr_3by10, axis=0)); print(np.mean(arr_3by10, axis=1))
 print(np.std(arr_3by10))
 print(np.std(arr_3by10, axis=0))
 print(np.std(arr_3by10, axis=1))
+</pre>
