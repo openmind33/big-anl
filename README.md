@@ -32,6 +32,8 @@ dfTrain.describe()
 for col in dfTrain.columns:
     (kurtosis,skew)=dfTrain[col].kurtosis(),dfTrain[col].skew()
     print("{}: 첨도={}, 왜도={}".format(col,kurtosis,skew))
+</pre>
+<pre>
 Y1: 첨도=0.0113768715583209, 왜도=-0.18034727886048718
 Y2: 첨도=-1.0287224064997245, 왜도=0.9856385635666307
 V1: 첨도=-1.5056814870136943, 왜도=-0.175505573216797
