@@ -10,6 +10,13 @@ pysqldf("select * from dfTrain limit 10;")
 pysqldf("select Y1 from dfTrain group by Y2;")
 </pre>
 
+<h4>Histogram</h4>
+<pre>
+df_hist = dfTrain[['Y1']].hist(bins=10)
+df_hist = dfTrain[['Y2']].hist(bins=2)
+</pre>
+
+
 
 <h3>기술통계</h3>
 
@@ -18,22 +25,6 @@ pysqldf("select Y1 from dfTrain group by Y2;")
 dfTrain.describe()
 </pre>
 
-
-<h4>Histogram</h4>
-<pre>
-df_hist = dfTrain[['Y2']].hist(bins=2)
-</pre>
-
-<h3>기술통계량</h3>
-<pre>
-</pre>
-
-
-
-
-<h4>기술통계량</h4>
-
-<h4>SQL in Pandas</h4>
 
 <h2>Decision Tree - Classification & Regression</h2>
 
