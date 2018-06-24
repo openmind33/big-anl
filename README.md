@@ -15,7 +15,7 @@ pysqldf("select Y1 from dfTrain group by Y2;")
 
 <h3>연속형 변수의 기술통계량</h3>
 <pre>
-dfTreain.describe()
+dfTrain.describe()
 </pre>
 
 
