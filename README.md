@@ -12,6 +12,11 @@ pysqldf("select Y1 from dfTrain group by Y2;")
 
 <h2>Decision Tree - Classification & Regression</h2>
 
+<h2>Naive Bayes - Classification</h2>
+
+
+
+
 <h2>Naive Bayes</h2>
 - http://chem-eng.utoronto.ca/~datamining/dmc/naive_bayesian.htm
 
