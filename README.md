@@ -11,6 +11,6 @@ pysqldf("select Y1 from dfTrain group by Y2;")
 
 
 
-[Naive Bayes]
+<h2>Naive Bayes</h2>
 - http://chem-eng.utoronto.ca/~datamining/dmc/naive_bayesian.htm
 
