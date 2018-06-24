@@ -1,5 +1,5 @@
 <h1>빅데이터 분석 전문가 과정</h1>
-
+<h2>탐색과 기술통계</h2>
 <h4>SQL in Pandas</h4>
 <pre>
 from pandasql import sqldf
