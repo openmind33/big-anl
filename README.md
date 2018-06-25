@@ -51,6 +51,14 @@ V11: 첨도=-0.46891067624666727, 왜도=-0.20318697986064396
 
 <h2>Decision Tree - Classification & Regression</h2>
 
+- conda install graphviz
+- pip install graphviz
+- download and install : graphviz-2.38.msi
+    - [download link] https://graphviz.gitlab.io/_pages/Download/Download_windows.html
+    - [set path] C:\Apps\Graphviz2.38\bin
+
+
+
 <h2>Naive Bayes - Classification</h2>
 
 
