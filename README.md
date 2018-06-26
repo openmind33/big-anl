@@ -70,3 +70,9 @@ V11: 첨도=-0.46891067624666727, 왜도=-0.20318697986064396
 <h2>Model Evaluation</h2>
 - https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 
+
+<h2>DTW</h2>
+- https://dtaidistance.readthedocs.io/en/latest/usage/dtw.html
+
+
+
