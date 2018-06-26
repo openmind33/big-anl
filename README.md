@@ -7,7 +7,7 @@
 from pandasql import sqldf
 pysqldf = lambda q: sqldf(q, globals())
 pysqldf("select * from dfTrain limit 10;")
-pysqldf("select Y1 from dfTrain group by Y2;")
+pysqldf("select Y1, sum(*) as sum from dfTrain group by Y2;")
 </pre>
 
 
