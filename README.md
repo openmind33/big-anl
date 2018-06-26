@@ -75,6 +75,7 @@ V11: 첨도=-0.46891067624666727, 왜도=-0.20318697986064396
 - https://dtaidistance.readthedocs.io/en/latest/usage/dtw.html
 
 <h2>Word2Vector using Gensim</h2>
+
 - pip install gensim
 - $ ./gensim-word2vec.py
 
