@@ -1,6 +1,7 @@
 <h2></h2>
 
 [Source]
+
 DBMS
 - DB의 Table-> SQL -> Numpy Array로 변환 -> Analytic Model에 적용
   - db = dbms.connect.postgres('UserName', 'SuperSecret', 'Chinook')
