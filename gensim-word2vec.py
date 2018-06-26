@@ -24,11 +24,13 @@ from pprint import pprint
 
 from itertools import chain
 from glob import glob
-lines = set(chain.from_iterable(codecs.open(f, 'r',encoding="utf-8") for f in glob('./data/machine_learning.txt')))
+
+inputText = 'C:/Home/data/file/machine_learning.txt'
+lines = set(chain.from_iterable(codecs.open(f, 'r',encoding="utf-8") for f in glob(inputText)))
 lines = [line.lower() for line in lines]
-with codecs.open('data/machine_learning-lower.txt', 'w',encoding="utf-8") as out:
+with codecs.open(inputText, 'w',encoding="utf-8") as out:
     out.writelines(sorted(lines))
-sentences = word2vec.Text8Corpus('data/machine_learning-lower.txt')
+sentences = word2vec.Text8Corpus(inputText)
 model = word2vec.Word2Vec(sentences, size=200, workers=12, min_count=3, sg=0, window=8, iter=15, sample=1e-4, negative=25)
 
 word1 = 'machine'
