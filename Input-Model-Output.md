@@ -109,7 +109,14 @@ with hdfs_client.read(path) as reader:
 
 np_array = numpy.load(tf)
 
-...
+----start of pseudo code by 이이백---
+model = DecisionTreeClassifier()
+  .fit(np_array[:,[3,4,5]]   # Feature Selection
+      ,np_array[:,[1]]       # Label Assignment
+
+----end of pseudo code by 이이백---
+
+
 
 # save to file.npy
 tf = TemporaryFile()
