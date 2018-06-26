@@ -15,6 +15,7 @@ cursor.execute("""SELECT * FROM TABLE_NAME""")
 row = cursor.fetchone()
 </pre>
 
+http://memo.polypia.net/archives/2210
 <pre> 
 import cx_Oracle
  
@@ -30,7 +31,34 @@ while row:
     row = cursor.fetchone()
 </pre>
 
-File 
+Files in Remote Server
+<pre>
+import subprocess
+ssh = subprocess.Popen(['ssh', 'user@host', 'cat', 'path/to/file'],
+                       stdout=subprocess.PIPE)
+for line in ssh.stdout:
+    line  # do stuff
+
+
+import subprocess
+
+subprocess.Popen(["rsync", host-ip+'/path/to/file'],stdout=subprocess.PIPE)
+for line in ssh.stdout:
+    line  # do stuff
+
+
+import os
+import paramiko
+
+ssh = paramiko.SSHClient() 
+ssh.load_host_keys(os.path.expanduser(os.path.join("~", ".ssh", "known_hosts")))
+ssh.connect(server, username=username, password=password)
+sftp = ssh.open_sftp()
+sftp.put(localpath, remotepath)
+sftp.close()
+ssh.close()
+</pre>
+
 HDFS
 
 
